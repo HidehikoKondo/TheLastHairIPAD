@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="2">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="4">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tEA-2m-CEw">
+                                <rect key="frame" x="237" y="328" width="294" height="90"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button" image="startbutton.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vBp-hQ-tSm" kind="modal" animates="NO" id="NeF-Id-WI0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="K2H-jB-KJf">
+                                <rect key="frame" x="412" y="668" width="114" height="114"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button" image="tweetbutton.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tweetButton:" destination="2" eventType="touchUpInside" id="dc4-sQ-ax3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="nxE-sy-jBx">
+                                <rect key="frame" x="242" y="668" width="114" height="114"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button" image="likebutton.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="likeButton:" destination="2" eventType="touchUpInside" id="udf-aw-NYI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xIy-3O-hCy">
+                                <rect key="frame" x="582" y="668" width="114" height="114"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button" image="gamefeatbutton.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="gfButton:" destination="2" eventType="touchUpInside" id="fFq-fh-wDn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="tcj-5G-Pk4">
+                                <rect key="frame" x="72" y="668" width="114" height="114"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button" image="udonkoapps.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="y6g-rK-U4a" kind="modal" id="qPw-gK-sdo"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="title.png" id="Ey6-Gi-uGp">
+                                <rect key="frame" x="64" y="101" width="640" height="176"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="9fc-Oz-GVb">
+                                <rect key="frame" x="161" y="481" width="447" height="105"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button" image="rankbutton.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showBord" destination="2" eventType="touchUpInside" id="b78-aN-dp7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.60819620890000003" green="0.99206792089999996" blue="0.61589112079999997" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="appsButton" destination="tcj-5G-Pk4" id="KEh-tt-nMd"/>
+                        <outlet property="gfButton" destination="xIy-3O-hCy" id="oyd-rr-0vI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1463" y="-244"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="Wda-JZ-jrs">
+            <objects>
+                <viewController id="vBp-hQ-tSm" customClass="GameViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hE6-4S-Oju">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="namiheiHead4inch.png" id="0p0-6a-gh4" userLabel="Image View - 頭">
+                                <rect key="frame" x="0.0" y="120" width="768" height="1027"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="hair.png" id="bKj-in-44h" userLabel="Image View - 毛">
+                                <rect key="frame" x="359" y="370" width="50" height="120"/>
+                            </imageView>
+                            <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="umiheicombo.png" id="s2f-o5-4uC" userLabel="Image View - 海平コンボ">
+                                <rect key="frame" x="70" y="386" width="628" height="136"/>
+                            </imageView>
+                            <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="finger.png" id="OcK-P5-XHL" userLabel="Image View - ゆび">
+                                <rect key="frame" x="271" y="-37" width="500" height="450"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="0本抜き" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KF3-ea-xjS">
+                                <rect key="frame" x="10" y="66" width="748" height="72"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="house.png" id="TEf-vI-RC4" userLabel="Image View - 家">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </imageView>
+                            <imageView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="bakamon.png" id="wwH-Px-a3K" userLabel="Image View - ばかもん">
+                                <rect key="frame" x="75" y="742" width="618" height="125"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="J9J-Kc-f47" userLabel="ゲームオーバー">
+                                <rect key="frame" x="30" y="1016" width="700" height="787"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ハイスコア：０本抜き" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="du4-gw-0cw">
+                                        <rect key="frame" x="20" y="21" width="672" height="48"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="41"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <size key="shadowOffset" width="2" height="2"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="今のスコア：０本抜き" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DoG-dn-p10">
+                                        <rect key="frame" x="14" y="89" width="672" height="48"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="41"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <size key="shadowOffset" width="2" height="2"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="S6k-6B-XpS">
+                                        <rect key="frame" x="284" y="147" width="193" height="74"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Button" image="endbutton.png">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backButton2:" destination="vBp-hQ-tSm" eventType="touchUpInside" id="gkR-ue-N4E"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.64521198290000004" green="1" blue="0.89146084000000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="bakamonImageView" destination="wwH-Px-a3K" id="gYc-fX-Li5"/>
+                        <outlet property="fingerImageView" destination="OcK-P5-XHL" id="GEj-Sj-9Vn"/>
+                        <outlet property="gameOverView" destination="J9J-Kc-f47" id="Fyg-CS-a8G"/>
+                        <outlet property="hairImageView" destination="bKj-in-44h" id="U3m-AE-gkf"/>
+                        <outlet property="highScoreLabel" destination="du4-gw-0cw" id="FHR-yc-sBv"/>
+                        <outlet property="namiheiFaceImageView" destination="TEf-vI-RC4" id="Aqe-0t-Ztu"/>
+                        <outlet property="namiheiHeadImageView" destination="0p0-6a-gh4" id="bDA-RU-RMG"/>
+                        <outlet property="nowScoreLabel" destination="DoG-dn-p10" id="tH2-tl-e48"/>
+                        <outlet property="umiheiComboImageView" destination="s2f-o5-4uC" id="951-Ts-wTd"/>
+                        <outlet property="unplugLabel" destination="KF3-ea-xjS" id="i5a-js-6GN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TZ4-Yh-VSV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-396" y="-728"/>
+        </scene>
+        <!--App List View Controller-->
+        <scene sceneID="sEg-Id-bVa">
+            <objects>
+                <viewController id="y6g-rK-U4a" customClass="AppListViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pc7-jH-rad">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" id="TG1-BJ-73q">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                                <items>
+                                    <navigationItem title="おすすめアプリ" id="UKz-Gx-5O1">
+                                        <barButtonItem key="leftBarButtonItem" title="もどる" id="bug-xj-oX4">
+                                            <connections>
+                                                <action selector="backButton:" destination="y6g-rK-U4a" id="r81-tJ-nMH"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <webView contentMode="scaleToFill" id="nt8-y8-LYb">
+                                <rect key="frame" x="0.0" y="44" width="768" height="980"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="y6g-rK-U4a" id="YJ9-eD-xiS"/>
+                                </connections>
+                            </webView>
+                            <view alpha="0.80000000000000004" contentMode="scaleToFill" id="Eaa-Ds-2Ao">
+                                <rect key="frame" x="334" y="484" width="100" height="100"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" animating="YES" style="whiteLarge" id="u1Y-KV-fjp">
+                                        <rect key="frame" x="32" y="31" width="37" height="37"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="appWebView" destination="nt8-y8-LYb" id="v9M-aB-tYQ"/>
+                        <outlet property="loadingView" destination="Eaa-Ds-2Ao" id="NXo-hC-vAO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AA6-xA-v2i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-396" y="416"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bakamon.png" width="1236" height="250"/>
+        <image name="endbutton.png" width="386" height="148"/>
+        <image name="finger.png" width="1000" height="900"/>
+        <image name="gamefeatbutton.png" width="148" height="148"/>
+        <image name="hair.png" width="100" height="400"/>
+        <image name="house.png" width="1536" height="2048"/>
+        <image name="likebutton.png" width="296" height="296"/>
+        <image name="namiheiHead4inch.png" width="1536" height="2048"/>
+        <image name="rankbutton.png" width="894" height="210"/>
+        <image name="startbutton.png" width="588" height="180"/>
+        <image name="title.png" width="1280" height="352"/>
+        <image name="tweetbutton.png" width="296" height="296"/>
+        <image name="udonkoapps.png" width="296" height="296"/>
+        <image name="umiheicombo.png" width="1256" height="272"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
